@@ -24,6 +24,7 @@ android {
         }
         benchmark {
             signingConfig signingConfigs.debug
+            proguardFiles("benchmark-rules.pro")
             matchingFallbacks = ['release']
             debuggable false
         }
